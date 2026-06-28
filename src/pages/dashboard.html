@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../output.css"/>
+</head>
+<body>
+    <header class="border-b border-slate-200 bg-white">
+        <nav class="mx-auto min-w-screen flex items-center justify-between px-8 py-3 sm:px-6 lg:px-8">
+            <div class="flex gap-12 items-center">
+                <button class="rounded-lg p-2 text-3xl text-slate-900 hover:bg-slate-100 lg:hidden">
+                  ☰
+                </button>
+                <a href="" class="text-2xl font-bold text-blue-700">CampusConnect</a>
+                <ul class="hidden md:flex gap-6 items-center">
+                    <li><a href="./events.html" class="text-sm font-medium text-slate-700 hover:text-blue-700 ">Events</a></li>
+                    <li><a href="./clubs.html" class="text-sm font-medium text-slate-700 hover:text-blue-700">Clubs</a></li>
+                    <li><a href="./calendar.html" class="text-sm font-medium text-slate-700 hover:text-blue-700">Calendar</a></li>
+                    <li><a href="./dashboard.html" class="text-sm font-medium text-slate-700 hover:text-blue-700">Dashboard</a></li>
+                </ul>
+                 
+            </div>
+            <div class="hidden items-center gap-3 lg:flex">
+                <div class="relative">
+                    <img src="../img/icons/search.svg" alt="search icon" class="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2"/>
+                    <input type="text" placeholder="Search events..." class="w-64 rounded-lg border border-slate-300 py-2 pl-10 pr-4 text-sm outline-none focus:border-blue-700"/>
+                </div>
+                <a href="./register-event.html" class="rounded-lg bg-blue-700 px-5 py-2 text-sm font-semibold text-white hover:bg-blue-800">
+                  Join Event
+                </a>
+                
+
+            </div>
+            
+        </nav>
+
+    </header>
+    <main class="bg-[#F7F5FF]">
+      <div class="mx-auto grid min-h-screen grid-cols-1 lg:grid-cols-[240px_1fr]">
+
+        <!-- Sidebar -->
+        <aside class="hidden w-64 min-h-screen border-r border-slate-200 bg-white px-5 py-6 lg:block">
+           <div class="flex items-center gap-3">
+               <img src="../img/avatar.png" alt="Student avatar" class="h-12 w-12 rounded-full object-cover"/>
+           
+               <div>
+                 <h3 class="font-bold text-blue-700">Student Portal</h3>
+                 <p class="text-sm text-slate-500">University<br/> Ecosystem</p>
+               </div>
+               
+           </div>
+           <nav class="mt-8 space-y-2">
+            <a href="./dashboard.html" class="flex items-center gap-3 rounded-lg bg-blue-700 px-4 py-3 font-semibold text-white">
+                <img src="../img/icons/overview.svg" alt="Overview" class="h-5 w-5"/>
+                My Overview
+            </a>
+            <a href="./events.html" class="flex items-center gap-3 rounded-lg px-4 py-3 font-medium text-slate-600 hover:bg-blue-50 hover:text-blue-700">
+                <img src="../img/icons/calendar.svg" alt="calendar" class="h-5 w-5"/>
+                My Events
+            </a>
+            <a href="#" class="flex items-center gap-3 rounded-lg px-4 py-3 font-medium text-slate-600 hover:bg-blue-50 hover:text-blue-700">
+                <img src="../img/icons/heart.svg" alt="heart" class="h-5 w-5"/>
+                Saved Events
+            </a>
+            <a href="./clubs.html" class="flex items-center gap-3 rounded-lg px-4 py-3 font-medium text-slate-600 hover:bg-blue-50 hover:text-blue-700">
+                <img src="../img/icons/users.svg" alt="users" class="h-5 w-5"/>
+                My Clubs
+            </a>
+            <a href="#" class="flex items-center gap-3 rounded-lg px-4 py-3 font-medium text-slate-600 hover:bg-blue-50 hover:text-blue-700">
+                <img src="../img/icons/user.svg" alt="users" class="h-5 w-5"/>
+                Profile
+            </a>
+           </nav>
+        </aside>
+
+        <!-- Main dashboard content -->
+        <section class="px-4 py-6 sm:px-6 lg:px-8">
+            <div class="mt-2 flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
+                <div>
+                    <h1 class="text-4xl ml-2 font-bold text-slate-900 ">Welcome back, Yousef</h1>
+                    <p class="mt-2 ml-3 text-sm text-slate-500">
+                       Here's what's happening in your campus community today.
+                    </p>
+                </div>
+                <div class="flex  flex-col gap-3 sm:flex-row justify-center  gap-3">
+                    <a href="./calendar.html" class="flex items-center gap-2 rounded-lg border border-slate-300 bg-white px-6 py-2 text-sm font-medium text-slate-700 transition hover:border-blue-600 hover:text-blue-700">
+                        <img src="../img/icons/calendar-days.svg" alt="calendar" class="h-4 w-4"/>
+                        Schedule
+                    </a>
+                    <a href="./calendar.html" class="flex items-center gap-2 rounded-lg border border-slate-300 bg-blue-700  px-6 py-2 text-sm font-medium text-white transition hover:bg-blue-800">
+                        Join Event
+                    </a>
+                </div>
+            </div>
+            <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-4">
+                <div class="rounded-2xl border border-slate-200 bg-white p-6 ">
+                
+                <img src="../img/icons/registered.svg" alt="Calendar" class="h-6 w-6"/>
+                <p class="mt-5 text-sm font-medium text-slate-500">
+                  Registered Events
+                </p>
+                <h3 class="mt-2 text-4xl leading-none font-bold text-slate-900">
+                    12
+                </h3>
+
+                </div>
+                <div class="rounded-2xl border border-slate-200 bg-white p-6">
+                
+                <img src="../img/icons/heart-orange.svg" alt="Saved" class="h-6 w-6"/>
+                <p class="mt-5 text-sm font-medium text-slate-500">
+                  Saved
+                </p>
+                <h3 class="mt-2 text-4xl leading-none font-bold text-slate-900">
+                    24
+                </h3>
+
+                </div>
+                <div class="rounded-2xl border border-slate-200 bg-white p-6">
+                
+                <img src="../img/icons/members-brown.svg" alt="Members" class="h-6 w-6"/>
+                <p class="mt-5 text-sm font-medium text-slate-500">
+                  Joined Clubs
+                </p>
+                <h3 class="mt-2 text-4xl leading-none font-bold text-slate-900">
+                    04
+                </h3>
+
+                </div>
+                <div class="rounded-2xl border border-slate-200 bg-white p-6 ">
+                
+                <img src="../img/icons/certificate.svg" alt="Certificate" class="h-6 w-6"/>
+                <p class="mt-5 text-sm font-medium text-slate-500">
+                  Certificates
+                </p>
+                <h3 class="mt-2 text-4xl leading-none font-bold text-slate-900">
+                    07
+                </h3>
+
+                </div>
+         
+            </div>
+            
+        </section>
+
+       </div>
+</main>
+    
+</body>
+</html>
