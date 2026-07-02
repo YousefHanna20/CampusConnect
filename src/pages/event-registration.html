@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="../output.css"/>
+</head>
+<body>
+    <header class="border-b border-slate-200 bg-white">
+        <nav class="mx-auto min-w-screen flex items-center justify-between px-8 py-3 sm:px-6 lg:px-8">
+            <div class="flex gap-12 items-center">
+                <button class="rounded-lg p-2 text-3xl text-slate-900 hover:bg-slate-100 lg:hidden">
+                  ☰
+                </button>
+                <a href="" class="text-2xl font-bold text-blue-700">CampusConnect</a>
+                <ul class="hidden md:flex gap-6 items-center">
+                    <li><a href="./events.html" class="text-sm font-medium text-slate-700 hover:text-blue-700 ">Events</a></li>
+                    <li><a href="./clubs.html" class="text-sm font-medium text-slate-700 hover:text-blue-700">Clubs</a></li>
+                    <li><a href="./calendar.html" class="text-sm font-medium text-slate-700 hover:text-blue-700">Calendar</a></li>
+                    <li><a href="./dashboard.html" class="text-sm font-medium text-slate-700 hover:text-blue-700">Dashboard</a></li>
+                </ul>
+                 
+            </div>
+            <div class="hidden items-center gap-3 lg:flex">
+                <div class="relative">
+                    <img src="../img/icons/search.svg" alt="search icon" class="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2"/>
+                    <input type="text" placeholder="Search events..." class="w-64 rounded-lg border border-slate-300 py-2 pl-10 pr-4 text-sm outline-none focus:border-blue-700"/>
+                </div>
+                <a href="./register-event.html" class="rounded-lg bg-blue-700 px-5 py-2 text-sm font-semibold text-white hover:bg-blue-800">
+                  Join Event
+                </a>
+            </div>         
+        </nav>
+    </header>
+    <main class="bg-white">
+        <section class="mx-auto max-w-5xl mt-6">
+            <a href="./event-details.html" class="text-sm font-semibold text-slate-500 hover:text-blue-700">
+                 ← Back to Event Details
+            </a>
+            <h1 class="mt-8 text-4xl font-bold text-slate-900">Event Registration</h1>
+            <p class="mt-2 text-sm text-slate-500">Register for <a href="./event-details.html" class="font-semibold text-blue-700">
+                Annual Tech Symposium 2026</a>
+            </p>
+            <form class="mt-8 rounded-xl border border-slate-300 bg-[#FAF8FF] p-6 sm:p-8">
+                <!--full name-->
+                <div>
+                    <label class="text-sm font-semibold text-slate-700">Full Name</label>
+                    <input type="text" placeholder="Enter your full legal name" 
+                    class="mt-2 w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-sm outline-none focus:border-blue-700"/>
+                </div>
+                <!--Email + Student Id-->
+                <div class="mt-6 grid gap-6 grid-cols-1 md:grid-cols-2">
+                    <div>
+                        <label class="text-sm font-semibold text-slate-700">University Email</label>
+                        <input type="email" placeholder="student@yniversity.edu" 
+                        class="mt-2 w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-sm outline-none focus:border-blue-700"/>
+                    </div>
+                    <div>
+                        <label class="text-sm font-semibold text-slate-700">Student ID</label>
+                        <input type="text" placeholder="8-digit ID number" 
+                        class="mt-2 w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-sm outline-none focus:border-blue-700"/>
+                    </div>
+                </div>
+                <!--Major + phone number-->
+                <div class="mt-6 grid gap-6 grid-cols-1 md:grid-cols-2">
+                    <div>
+                        <label class="text-sm font-semibold text-slate-700">Major/Department</label>
+                        <select class="mt-2 w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-sm outline-none focus:border-blue-700">
+                            <option>Select your major</option>
+                            <option>Computer Engineering</option>
+                            <option>Civil Engineering</option>
+                            <option>Electrical Engineering</option>
+                            <option>Mechanical Engineering</option>
+                            <option>Architectural Engineering</option>
+                            <option>Medical</option>
+                            <option>Dentical</option>
+                            <option>Pharmacy</option>
+                            <option>Art</option>
+                            <option>Science</option>
+                            <option>Information Technology</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="text-sm font-semibold text-slate-700">Phone Number</label>
+                        <input type="text" placeholder="+1 (555) 000-0000"
+                        class="mt-2 w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-sm outline-none focus:border-blue-700"/>
+                    </div>
+                    <!--Notes-->
+                    <div class="md:col-span-2">
+                        <label class="text-sm font-semibold text-slate-700"> Additional Notes / Dietary Requirements</label>
+                        <textarea  rows="5" placeholder="Any special requests or information for organizers..."
+                        class="mt-2 w-full resize-none rounded-lg border border-slate-300 bg-white px-4 py-3 text-sm outline-none focus:border-blue-700">
+                        </textarea>
+                    </div>
+                    <!--Agreement-->
+                    <label class="mt-6   flex items-start gap-4 text-sm text-slate-600  md:col-span-2">
+                        <input type="checkbox" class="mt-1 rounded h-4 w-4 border-slate-300"/>
+                        <span>I agree to the <a href="#" class="font-semibold text-blue-700">Code of Conduct</a>
+                            and permit the university to process my registration data for event <br/>logistics.
+                        </span>
+                    </label>
+                    <!--Submit button-->
+                    <button type="submit" class=" mt-10 md:col-span-2 flex w-full items-center justify-center gap-2 rounded-lg bg-blue-700  py-4 text-lg font-semibold text-white transition hover:bg-blue-800">
+                      <img src="../img/icons/confirm-register.svg" alt="checked" class="h-4 w-4"/>
+                      Confirm Registration
+                    </button>
+                    <p class=" md: col-span-2 text-center text-sm text-slate-500">
+                       A confirmation email will be sent upon successful submission.
+                    </p>     
+                </div>
+            </form>
+        </section>
+
+    </main>
+    <footer class="bg-slate-200 mt-20">
+        <div class="flex flex-col gap-4 px-8 py-12 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+          <div>
+              <h2 class="text-xl font-bold text-blue-700">
+                CampusConnect
+              </h2>
+
+              <p class="mt-2 text-sm text-slate-600">
+                © 2026 CampusConnect University. All rights reserved.
+              </p>
+          </div>
+
+          <div class="flex flex-wrap gap-5 text-sm text-slate-600">
+            <a href="#" class="hover:text-blue-700">Privacy Policy</a>
+            <a href="#" class="hover:text-blue-700">Terms of Service</a>
+            <a href="#" class="hover:text-blue-700">Campus Map</a>
+            <a href="#" class="hover:text-blue-700">Directory</a>
+          </div>
+
+        </div>
+    
+    </footer>
+</body>
+</html>
