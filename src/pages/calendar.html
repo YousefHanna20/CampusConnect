@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../output.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <header class="border-b border-slate-200 bg-white">
+        <nav class="mx-auto min-w-screen flex items-center justify-between px-8 py-3 sm:px-6 lg:px-8">
+            <div class="flex gap-12 items-center">
+                <button class="rounded-lg p-2 text-3xl text-slate-900 hover:bg-slate-100 lg:hidden">
+                  ☰
+                </button>
+                <a href="" class="text-2xl font-bold text-blue-700">CampusConnect</a>
+                <ul class="hidden md:flex gap-6 items-center">
+                    <li><a href="./events.html" class="text-sm font-medium text-slate-700 hover:text-blue-700 ">Events</a></li>
+                    <li><a href="./clubs.html" class="text-sm font-medium text-slate-700 hover:text-blue-700">Clubs</a></li>
+                    <li><a href="./calendar.html" class="text-sm font-medium text-slate-700 hover:text-blue-700">Calendar</a></li>
+                    <li><a href="./dashboard.html" class="text-sm font-medium text-slate-700 hover:text-blue-700">Dashboard</a></li>
+                </ul>
+                 
+            </div>
+            <div class="hidden items-center gap-3 lg:flex">
+                <div class="relative">
+                    <img src="../img/icons/search.svg" alt="search icon" class="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2"/>
+                    <input type="text" placeholder="Search events..." class="w-64 rounded-lg border border-slate-300 py-2 pl-10 pr-4 text-sm outline-none focus:border-blue-700"/>
+                </div>
+                <a href="./register-event.html" class="rounded-lg bg-blue-700 px-5 py-2 text-sm font-semibold text-white hover:bg-blue-800">
+                  Join Event
+                </a>
+            </div>         
+        </nav>
+    </header>
+    <main class="bg-[#F7F5FF]">
+        <div class="grid min-h-screen grid-cols-1 lg:grid-cols-[240px_1fr]">
+            <aside class="hidden w-64 min-h-screen border-r border-slate-200 bg-white px-5 py-6 lg:block">
+             <div class="flex items-center gap-3">
+               <img src="../img/avatar.png" alt="Student avatar" class="h-12 w-12 rounded-full object-cover"/>
+           
+               <div>
+                 <h3 class="font-bold text-blue-700">Student Portal</h3>
+                 <p class="text-sm text-slate-500">University<br/> Ecosystem</p>
+               </div>
+               
+             </div>
+             <nav class="mt-8 space-y-2">
+              <a href="./dashboard.html" class="flex items-center gap-3 rounded-lg  px-4 py-3 font-medium hover:bg-blue-50 hover:text-blue-700">
+                <img src="../img/icons/overview-black.svg" alt="Overview" class="h-5 w-5"/>
+                My Overview
+              </a>
+              <a href="./events.html" class="flex items-center gap-3 rounded-lg px-4 py-3 font-medium text-slate-600 hover:bg-blue-50 hover:text-blue-700">
+                <img src="../img/icons/calendar.svg" alt="calendar" class="h-5 w-5"/>
+                My Events
+              </a>
+              <a href="#" class="flex items-center gap-3 rounded-lg px-4 py-3 font-medium text-slate-600 hover:bg-blue-50 hover:text-blue-700">
+                <img src="../img/icons/heart.svg" alt="heart" class="h-5 w-5"/>
+                Saved Events
+              </a>
+              <a href="./clubs.html" class="flex items-center gap-3 rounded-lg px-4 py-3 font-medium text-slate-600 hover:bg-blue-50 hover:text-blue-700">
+                <img src="../img/icons/users.svg" alt="users" class="h-5 w-5"/>
+                My Clubs
+              </a>
+              <a href="#" class="flex items-center gap-3 rounded-lg px-4 py-3 font-medium text-slate-600 hover:bg-blue-50 hover:text-blue-700">
+                <img src="../img/icons/user.svg" alt="users" class="h-5 w-5"/>
+                Profile
+              </a>
+             </nav>
+          </aside>  
+          <section class="overflow-x-hidden px-4 py-8 sm:px-6 lg:px-8">
+            <div class="mb-8 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+                <div>
+                    <h1 class="text-4xl font-bold text-slate-900">July 2026</h1>
+                    <p class="mt-2 text-sm text-slate-500">Fall Semester Events & Academic Activities</p>
+                </div>
+                <div class="flex items-center gap-2 ">
+                  <button class="rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:text-blue-700">‹</button>
+                  <button class="inline-flex items-center gap-2 rounded-lg border border-slate-300 bg-white px-5 py-2 text-sm font-semibold text-slate-700 transition hover:border-blue-600 hover:text-blue-700">Today</button>
+                  <button class="rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:text-blue-700">›</button>
+                </div>
+            </div>
+            <!--calendar-->
+            <div class="grid grid-cols-1 gap-6 xl:grid-cols-[1fr_250px]">
+                <div class="overflow-x-auto">
+                    <div class="min-w-[760px] overflow-hidden rounded-2xl border border-slate-300 bg-white">
+                        <div class="grid grid-cols-7  border-b border-slate-300 bg-[#D9D9E5] text-center text-xs font-bold uppercase text-slate-500 text-center">
+                        <div class="py-4">SUN</div>
+                        <div class="py-4">MON</div>
+                        <div class="py-4">TUE</div>
+                        <div class="py-4">WED</div>
+                        <div class="py-4">THU</div>
+                        <div class="py-4">FRI</div>
+                        <div class="py-4">SAT</div>
+                    </div>
+                    <div class="grid grid-cols-7">
+                        <div class="min-h-24 sm:min-h-28 lg:min-h-32  border-b border-r border-slate-200 bg-slate-100 p-3 text-sm text-slate-400">27</div>
+                        <div class="min-h-24 sm:min-h-28 lg:min-h-32  border-b border-r border-slate-200 bg-slate-100 p-3 text-sm text-slate-400">28</div>
+                        <div class="min-h-24 sm:min-h-28 lg:min-h-32min-h-24 sm:min-h-28 lg:min-h-32 border-b border-r border-slate-200 bg-slate-100 p-3 text-sm text-slate-400">29</div>
+                        <div class="min-h-24 sm:min-h-28 lg:min-h-32  border-b border-r border-slate-200 bg-slate-100 p-3 text-sm text-slate-400">30</div>
+                        <div class="min-h-24 sm:min-h-28 lg:min-h-32  border-b border-r border-slate-200 bg-slate-100 p-3 text-sm text-slate-400">31</div>
+                        <div class="min-h-24 sm:min-h-28 lg:min-h-32  border-b border-r border-slate-200 p-3 text-sm">
+                            <p class="font-semibold text-slate-700">1</p>
+                            <span class="mt-2 inline-block max-w-full truncate block rounded bg-blue-700 px-2 py-1 text-xs font-semibold text-white">
+                              Hackathon Start
+                            </span>
+                        </div>
+                        <div class="min-h-28  border-b border-slate-200 p-3 text-sm">
+                            <p class="font-semibold text-slate-700">2</p>
+                        </div>
+                        <div class="min-h-24 sm:min-h-28 lg:min-h-32  border-b border-r border-slate-200 p-3 text-sm">3</div>
+                        <div class="min-h-24 sm:min-h-28 lg:min-h-32  border-b border-r border-slate-200 p-3 text-sm">
+                            <p class="font-semibold text-blue-700">4</p>
+                            <span class="mt-2 inline-block max-w-full truncate bg-yellow-500 px-2 py-1 text-xs font-semibold text-white">Study Group</span>
+                            <span class="mt-2 inline-block max-w-full truncate bg-orange-700 px-2 py-1 text-xs font-semibold text-white">Bio Midterm</span>
+                        </div>
+                         <div class="min-h-24 sm:min-h-28 lg:min-h-32  border-b border-r border-slate-200 p-3 text-sm">5</div>
+                         <div class="min-h-24 sm:min-h-28 lg:min-h-32  border-b border-r border-slate-200 p-3 text-sm">
+                            <p class="font-semibold text-slate-700">6</p>
+                            <span class="mt-2 inline-block max-w-full truncate rounded bg-slate-200 px-2 py-1 text-xs font-semibold text-slate-600">Late Add Deadline</span>
+                         </div>
+                         <div class="min-h-24 sm:min-h-28 lg:min-h-32 border-b border-r border-slate-200 p-3 text-sm">7</div>
+                         <div class="min-h-24 sm:min-h-28 lg:min-h-32min-h-24 sm:min-h-28 lg:min-h-32min-h-24 sm:min-h-28 lg:min-h-32 border-b border-r border-slate-200 p-3 text-sm">8</div>
+                         <div class="min-h-24 sm:min-h-28 lg:min-h-32 border-b border-slate-200 p-3 text-sm">9</div>
+
+                        <div class="min-h-24 sm:min-h-28 lg:min-h-32min-h-24 sm:min-h-28 lg:min-h-32 border-r border-slate-200 p-3 text-sm">10</div>
+                        <div class="min-h-24 sm:min-h-28 lg:min-h-32min-h-24 sm:min-h-28 lg:min-h-32 border-r border-slate-200 p-3 text-sm">11</div>
+                        <div class="min-h-24 sm:min-h-28 lg:min-h-32min-h-24 sm:min-h-28 lg:min-h-32 border-r border-slate-200 p-3 text-sm">12</div>
+                        <div class="min-h-24 sm:min-h-28 lg:min-h-32min-h-24 sm:min-h-28 lg:min-h-32 border-r border-slate-200 p-3 text-sm">
+                          <p class="font-semibold text-slate-700">13</p>
+                          <span class="mt-2 inline-block max-w-full truncate rounded bg-blue-700 px-2 py-1 text-xs font-semibold text-white">Career Fair</span>
+                        </div>
+                        <div class="min-h-24 sm:min-h-28 lg:min-h-32  border-r border-slate-200 p-3 text-sm">14</div>
+                        <div class="min-h-24 sm:min-h-28 lg:min-h-32  border-r border-slate-200 p-3 text-sm">
+                           <p class="font-semibold text-slate-700">15</p>
+                           <span class="mt-2 inline-block max-w-full truncate rounded bg-red-200 px-2 py-1 text-[11px] font-semibold text-red-700">Grant App Due</span>
+                        </div>
+                        <div class="min-h-24 sm:min-h-28 lg:min-h-32   p-3 text-sm">16</div>
+                    </div>
+                    </div>
+                    
+                </div>
+                <aside>
+                    <div class="">
+                        <h2 class="flex items-center gap-2 text-lg font-semibold text-slate-900">
+                            <img src="../img/icons/calender-hub.svg" alt="hub" class="h-4 w-4"/>
+                            Today's Hub
+                        </h2>
+                        <div class="mt-4 space-y-4">
+                            <div class="rounded-lg border-l-3 border-blue-700 bg-white p-4">
+                                <p class="text-xs font-semibold text-slate-500">10:00 AM - 12:00 PM</p>
+                                <h3 class="mt-1 font-bold text-slate-900">Advanced Algorithms</h3>
+                                <p class=" mt-1 text-xs  text-slate-500">Lovelace Hall, Rm 302</p>
+                            </div>
+                        </div>
+                        <div class="mt-4 space-y-4">
+                            <div class="rounded-lg border-l-3 border-[#855300] bg-white p-4">
+                                <p class="text-xs font-semibold text-slate-500">03:00 PM - 05:00 PM</p>
+                                <h3 class="mt-1 font-bold text-slate-900">UX Design Workshop</h3>
+                                <p class=" mt-1 text-xs  text-slate-500">Innovation Center</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" mt-4 rounded-lg border border-slate-300 bg-white p-5">
+                        <h2 class="text-lg font-semibold text-slate-900">My Registered Events</h2>
+                        <div class="mt-4 space-y-4">
+                            <div class="flex gap-4">
+                                <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-slate-100">
+                                    <img src="../img/icons/calendar-days.svg" alt="calendar" class="h-4 w-4"/>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-sm text-slate-900">AI Foundations Workshop</h3>
+                                    <p class="text-sm text-slate-500">Oct 24, 2:00 PM</p>
+                                    <p class="text-xs text-slate-500">Innovation Lab</p>
+                                </div>
+
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-slate-100">
+                                    <img src="../img/icons/calendar-days.svg" alt="calendar" class="h-4 w-4"/>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-sm text-slate-900">UX Design Workshop</h3>
+                                    <p class="text-sm text-slate-500">Oct 28, 3:00 PM</p>
+                                    <p class="text-xs text-slate-500">Design Center</p>
+                                </div>
+
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="flex h-10 w-10 items-center justify-center rounded-lg bg-slate-100">
+                                    <img src="../img/icons/calendar-days.svg" alt="calendar" class="h-4 w-4"/>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-sm text-slate-900">Campus Art Exhibition</h3>
+                                    <p class="text-sm text-slate-500">Nov 2, 11:00 AM</p>
+                                    <p class="text-xs text-slate-500">Main Gallery</p>
+                                </div>
+
+                            </div>
+                            <a href="./events.html" class="mt-5 block rounded-lg border border-blue-200 bg-slate-50 py-3 text-center font-bold text-blue-700 transition hover:bg-blue-100">
+                              View My Events
+                            </a>
+
+                        </div>
+                        
+
+                    </div>
+                    <div class="mt-6">
+                        <img src="../img/Campus Visual.png" alt="campus visual" class="h-48 w-full rounded-xl object-cover sm:h-56"/>
+                    </div>
+
+                </aside>
+
+            </div>
+        </section>   
+        </div>
+        
+    </main>
+    <footer class="bg-slate-200">
+        <div class="flex flex-col gap-4 px-8 py-12 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+          <div>
+              <h2 class="text-xl font-bold text-blue-700">
+                CampusConnect
+              </h2>
+
+              <p class="mt-2 text-sm text-slate-600">
+                © 2026 CampusConnect University. All rights reserved.
+              </p>
+          </div>
+
+          <div class="flex flex-wrap gap-5 text-sm text-slate-600">
+            <a href="#" class="hover:text-blue-700">Privacy Policy</a>
+            <a href="#" class="hover:text-blue-700">Terms of Service</a>
+            <a href="#" class="hover:text-blue-700">Campus Map</a>
+            <a href="#" class="hover:text-blue-700">Directory</a>
+          </div>
+
+        </div>
+    
+    </footer>
+</body>
+</html>
