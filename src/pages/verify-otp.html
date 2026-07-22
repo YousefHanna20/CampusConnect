@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify OTP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+       rel="stylesheet"
+    >
+    <link rel="stylesheet" href="../output.css"/>
+</head>
+<body class="bg-slate-50 font-['Inter'] text-slate-900">
+    <div class="mx-auto max-w-7xl px-6 py-6">
+        <main class="grid min-h-screen grid-cols-1 lg:grid-cols-2">
+        <section class="relative hidden overflow-hidden bg-blue-700 px-10 py-8 text-white lg:flex lg:flex-col xl:px-14 xl:py-10">
+            <div class="absolute -left-24 -top-24 h-72 w-72 rounded-full bg-white/5"></div>
+            <div class="absolute -bottom-40 -right-32 h-96 w-96 rounded-full bg-white/5"></div>
+            <a href="../index.html" class="relative z-10 flex items-center gap-2 text-2xl font-bold">
+                <img src="../img/icons/network.svg" alt="network" class="h-4 w-4"/>
+                <span class="">CampusConnect</span>
+
+            </a>
+            <div class="relative z-10 my-auto max-w-xl mt-20">
+                <h1 class="max-w-md text-4xl font-bold leading-tight xl:text-5xl">
+                    Verify Your <span class="block">Identity</span>
+                </h1>
+                <p class="mt-4 max-w-lg text-sm leading-7 text-blue-100">
+                    Enter the verification code sent to your university email to</br> continue securely.
+                </p>
+                <div class="mt-12 space-y-7">
+                    <div class="flex items-start gap-4">
+                        <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white/10">
+                            <img src="../img/icons/sheild-check.svg" alt="" class="h-6 w-6"/>
+                        </div>
+                        <div>
+                            <h2 class="font-semibold">Email Verification</h2>
+                            <p class="mt-1 text-sm leading-6 text-blue-100">
+                                A secure code has been sent directly to your university inbox.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="mt-6 flex items-start gap-4">
+                        <div class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-white/10">
+                            <img src="../img/icons/clock-white.svg" alt="" class="h-6 w-6"/>
+                        </div>
+                        <div>
+                            <h2 class="font-semibold"> Fast &amp; Secure Access</h2>
+                            <p class="mt-1 text-sm leading-6 text-blue-100">
+                                Your verification code expires after a short period for maximum security.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+             <!-- Testimonial card -->
+              <div class="mt-10 relative mtz-10 rounded-2xl border border-white/10 bg-white/10 p-5 backdrop-blur-sm">
+                <p class="text-sm italic leading-6 text-blue-50">
+                    “CampusConnect makes it easier to stay connected with everything happening across the university.”
+                </p>
+                <div class="mt-4 flex items-center gap-3">
+                    <div class="flex -space-x-2">
+                        <img
+                            src="../img/student-1.png"
+                            alt="Student"
+                            class="h-9 w-9 rounded-full  border-2 border-blue-700 object-cover"
+                        >
+
+                        <img
+                            src="../img/student-2.png"
+                            alt="Student"
+                            class="h-9 w-9 rounded-full  border-2 border-blue-700 object-cover"
+                        >
+
+                        <img
+                            src="../img/student-3.png"
+                            alt="Student"
+                            class="h-9 w-9 rounded-full  border-2 border-blue-700 object-cover"
+                        >
+
+                    </div>
+                    <span class="text-sm font-medium text-blue-100"> Student Ambassadors</span>
+
+                </div>
+
+              </div>
+
+        </section>
+
+        <section class="flex items-center justify-center bg-white px-5 py-10 sm:px-8 lg:px-12">
+            <div class="w-full max-w-md">
+                <h2 class="text-4xl font-bold tracking-tight text-slate-900">Verify Your Email</h2>
+                <p class="mt-4 text-base leading-7 text-slate-500">
+                    Enter the 6-digit verification code sent to your university email address.
+
+                </p>
+                <div class="mt-5 inline-flex items-center gap-2 rounded-lg border border-blue-100 bg-blue-50 px-3 py-2">
+                    <img src="../img/icons/email.svg" class="h-4 w-4" />
+                    <span class="text-sm font-medium text-blue-700">yousef@stu.najah.edu</span>
+                </div>
+                 <form
+                    action="./reset-password.html"
+                    class="mt-8"
+                >
+
+                    <!-- OTP inputs -->
+                    <div class="mt-8 flex justify-between gap-3">
+
+                        <input
+                            type="text"
+                            inputmode="numeric"
+                            maxlength="1"
+                            autocomplete="one-time-code"
+                            aria-label="OTP digit 1"
+                            required
+                            class="h-16 w-16 rounded-2xl border border-slate-300 text-center text-2xl font-semibold outline-none transition focus:border-blue-600 focus:ring-4 focus:ring-blue-100"
+                        >
+
+                        <input
+                            type="text"
+                            inputmode="numeric"
+                            maxlength="1"
+                            aria-label="OTP digit 2"
+                            required
+                            class="h-16 w-16 rounded-2xl border border-slate-300 text-center text-2xl font-semibold outline-none transition focus:border-blue-600 focus:ring-4 focus:ring-blue-100"
+                        >
+
+                        <input
+                            type="text"
+                            inputmode="numeric"
+                            maxlength="1"
+                            aria-label="OTP digit 3"
+                            required 
+                           class="h-16 w-16 rounded-2xl border border-slate-300 text-center text-2xl font-semibold outline-none transition focus:border-blue-600 focus:ring-4 focus:ring-blue-100"
+                        >
+
+                        <input
+                            type="text"
+                            inputmode="numeric"
+                            maxlength="1"
+                            aria-label="OTP digit 4"
+                            required
+                            class="h-16 w-16 rounded-2xl border border-slate-300 text-center text-2xl font-semibold outline-none transition focus:border-blue-600 focus:ring-4 focus:ring-blue-100"
+                        >
+
+                        <input
+                            type="text"
+                            inputmode="numeric"
+                            maxlength="1"
+                            aria-label="OTP digit 5"
+                            required
+                            class="h-16 w-16 rounded-2xl border border-slate-300 text-center text-2xl font-semibold outline-none transition focus:border-blue-600 focus:ring-4 focus:ring-blue-100"
+                        >
+
+                        <input
+                            type="text"
+                            inputmode="numeric"
+                            maxlength="1"
+                            aria-label="OTP digit 6"
+                            required
+                            class="h-16 w-16 rounded-2xl border border-slate-300 text-center text-2xl font-semibold outline-none transition focus:border-blue-600 focus:ring-4 focus:ring-blue-100"
+                        >
+
+                    </div>
+
+                    <!-- Timer -->
+                    <div
+                        class="mt-6 flex items-center justify-center gap-2 text-sm text-slate-500"
+                    >
+                        <img
+                            src="../img/icons/clock-blue.svg"
+                            alt=""
+                            class="h-4 w-4"
+                        >
+
+                        <span>
+                            Code expires in
+
+                            <span class="font-semibold text-blue-700">
+                                01:45
+                            </span>
+                        </span>
+                    </div>
+
+                    <!-- Verify button -->
+                    <button
+                        type="submit"
+                        class="mt-6 w-full rounded-2xl bg-blue-700 px-6 py-4 text-sm font-bold text-white transition hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-200"
+                    >
+                        Verify Code
+                    </button>
+
+                    <!-- Resend code -->
+                    <div class="mt-6 text-center">
+
+                        <p class="text-sm text-slate-500">
+                            Didn't receive the code?
+
+                            <a
+                                href="#"
+                                class="ml-1 font-semibold text-blue-700 transition hover:text-blue-800 hover:underline"
+                            >
+                                Resend Code
+                            </a>
+                        </p>
+
+                    </div>
+
+                    <!-- Divider -->
+                    <div class="my-7 mt-4 border-t border-slate-200"></div>
+
+                    <!-- Back to login -->
+                    <a
+                        href="./login.html"
+                        class="mt-4 flex items-center justify-center gap-2 text-sm font-medium text-slate-500 transition hover:text-blue-700"
+                    >
+                        <img
+                            src="../img/icons/arrow-left.svg"
+                            alt=""
+                            class="h-3 w-3"
+                        >
+
+                        <span>
+                            Back to Login
+                        </span>
+                    </a>
+
+                </form>
+            </div>
+           
+
+
+        </section>
+
+    </main>
+
+    </div>
+    
+</body>
+</html>
